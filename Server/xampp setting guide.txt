@@ -1,0 +1,18 @@
+https://yoo-hyeok.tistory.com/17?category=708422
+참고 사이트
+
+설치파일 다운로드 사이트
+https://www.apachefriends.org/download.html
+
+1.xampp 프로그램을 깐다
+2.위 사이트를 참고하여 우리에게 필요한 apache와 mysql의 start버튼을 눌러 실행시킨다.
+3.내 pc에 마우스 오른쪽을 클릭하여 속성-> 고급시스템-> 환경변수에 들어가서 mysql 환경변수를 설정한다.
+4. cmd를 활용하여 데이터베이스를 만든다.
+4-1. mysql -u root 명령어를 통하여 mysql에 접속한다.
+4-2. create 명령어를 이용하여 데이터베이스를 생성한다.
+4-3. use 명령어를 이용하여 생성한 데이터베이스를 이용할 수 있다
+4-4. create table 테이블명(데이터명 자료형(데이터 길이)..) 명령어를 통해 테이블을 생성한다.
+4-5. insert into 테이블명 values (데이터값1, 데이터값2,..) 명령어를 통해 테이블을 구성한다.
+5.xampp폴더 안에 존재하는 htdocs라는 폴더에 데이터베이스에 접속하여 데이터 값을 받아올 명령어가 들어가 있는 php파일을 넣는다.
+6. 안드로이드 스튜디오에 manifests.xml에 <uses-permission android:name="android.permission.INTERNET"/>를 넣어준다.
+7. http://localhost/PHP파일명을 통해 PHP파일을 통해 데이터베이스에서 PHP파일 조건에 맞는 데이터값을 가져온다.

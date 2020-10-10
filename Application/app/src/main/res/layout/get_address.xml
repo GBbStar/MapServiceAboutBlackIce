@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/arrivalEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="2"
+            android:hint="도착"
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF"></EditText>
+
+        <Button
+            android:id="@+id/arrivalBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="8"
+            android:text="검색"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/doFindLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#33FFFFFF"
+        android:text="길찾기"
+        android:textColor="#000000" />
+
+    <ListView
+        android:id="@+id/searchResult_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDoFindLoad"
+        
+        >
+    </ListView>
+
+</LinearLayout>
